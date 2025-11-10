@@ -50,5 +50,13 @@
         "image": "Ảnh đại diện",
         "save": "Lưu user",
         "edit": "Lưu thay đổi"
+    },
+    "homepage": {
+        "outstanding-doctor": "Bác sĩ nổi bật tuần qua",
+        "more-infor": "Xem thêm",
+        "handbook": "Cẩm nang",
+        "specialty": "Chuyên khoa phổ biến",
+        "facilities": "Cơ sở y tế nổi bật",
+        "about": "Truyền thông nói về Booking Care"
     }
 }

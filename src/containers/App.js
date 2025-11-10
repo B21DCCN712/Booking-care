@@ -5,6 +5,7 @@ import { ConnectedRouter as Router } from "connected-react-router";
 import { history } from "../redux";
 import { ToastContainer } from "react-toastify";
 import HomePage from "./HomePage/HomePage.js";
+import DetailDoctor from "./Patient/Doctor/DetailDoctor.js";
 import {
     userIsAuthenticated,
     userIsNotAuthenticated,
@@ -65,6 +66,10 @@ class App extends Component {
                                     <Route
                                         path={path.HOMEPAGE}
                                         component={HomePage}
+                                    />
+                                    <Route
+                                        path={path.DETAIL_DOCTOR}
+                                        component={DetailDoctor}
                                     />
                                 </Switch>
                             </CustomScrollbars>

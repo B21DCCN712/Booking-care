@@ -34,31 +34,33 @@ class Specialty extends Component {
                 <div className="section-container">
                     <div className="section-header">
                         <span className="title-section">
-                            Chuyên khoa phổ biến
+                            <FormattedMessage id="homepage.specialty" />
                         </span>
-                        <button className="btn-section">Xem thêm</button>
+                        <button className="btn-section">
+                            <FormattedMessage id="homepage.more-infor" />
+                        </button>
                     </div>
                     <div className="section-body">
                         <Slider {...this.props.settings}>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />
-                                <div>Cơ xương khớp</div>
+                                <div>Thần kinh</div>
                             </div>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />
-                                <div>Cơ xương khớp</div>
+                                <div>Tiêu hoá</div>
                             </div>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />
-                                <div>Cơ xương khớp</div>
+                                <div>Tim mạch</div>
                             </div>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />
-                                <div>Cơ xương khớp</div>
+                                <div>Tai mũi họng</div>
                             </div>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />
-                                <div>Cơ xương khớp</div>
+                                <div>Da liễu</div>
                             </div>
                             <div className="section-customize">
                                 <div className="bg-image section-specialty" />

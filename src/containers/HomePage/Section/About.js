@@ -32,7 +32,7 @@ class About extends Component {
         return (
             <div className="section-share section-about">
                 <div className="section-about-header">
-                    Truyền thông nói về Booking Care
+                    <FormattedMessage id="homepage.about" />
                 </div>
                 <div className="section-about-content">
                     <div className="content-left">
@@ -41,10 +41,10 @@ class About extends Component {
                             height="400px"
                             src="https://www.youtube.com/embed/OASGscJQXp0?si=k5eBw5c-STqeJ_g4"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
                         ></iframe>
                     </div>
                     <div className="content-right">

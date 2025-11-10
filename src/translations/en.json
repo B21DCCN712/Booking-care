@@ -50,5 +50,13 @@
         "image": "Avatar",
         "save": "Save user",
         "edit": "Edit changes"
+    },
+    "homepage": {
+        "outstanding-doctor": "Last week's featured doctors",
+        "more-infor": "More information",
+        "handbook": "Handbook",
+        "specialty": "Popular specialties",
+        "facilities": "Outstanding medical facility",
+        "about": "Media talk about Booking Care"
     }
 }
