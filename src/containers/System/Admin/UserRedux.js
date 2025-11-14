@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
-import { getAllCodeService } from "../../../services/userService";
 import { LANGUAGES, CRUD_ACTIONS, CommonUtils } from "../../../utils";
 import * as actions from "../../../store/actions";
 import "./UserRedux.scss";
@@ -39,25 +38,10 @@ class UserRedux extends Component {
         this.props.getGenderStart();
         this.props.getPositionStart();
         this.props.getRoleStart();
-        // this.props.dispatch(actions.fetchGenderStart())
-        // try {
-        //   let res = await getAllCodeService("gender");
-        //   if (res && res.errCode === 0) {
-        //     this.setState({
-        //       genderArr: res.data
-        //     })
-        //   }
-        //   console.log("check res: ", res);
-        // } catch (e) {
-        //   console.log(e);
-        // }
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        //render => didupdate
-        //present (this) and past (prev)
-        //compare prevProps.genderRedux [] => this.props.genderRedux [3]
-        if (prevProps.genderRedux != this.props.genderRedux) {
+        if (prevProps.genderRedux !== this.props.genderRedux) {
             let arrGenders = this.props.genderRedux;
             this.setState({
                 genderArr: arrGenders,
@@ -68,7 +52,7 @@ class UserRedux extends Component {
             });
         }
 
-        if (prevProps.roleRedux != this.props.roleRedux) {
+        if (prevProps.roleRedux !== this.props.roleRedux) {
             let arrRoles = this.props.roleRedux;
 
             this.setState({
@@ -77,7 +61,7 @@ class UserRedux extends Component {
             });
         }
 
-        if (prevProps.positionRedux != this.props.positionRedux) {
+        if (prevProps.positionRedux !== this.props.positionRedux) {
             let arrPositions = this.props.positionRedux;
             this.setState({
                 positionArr: arrPositions,
@@ -88,7 +72,7 @@ class UserRedux extends Component {
             });
         }
 
-        if (prevProps.listUsers != this.props.listUsers) {
+        if (prevProps.listUsers !== this.props.listUsers) {
             let arrGenders = this.props.genderRedux;
             let arrRoles = this.props.roleRedux;
             let arrPositions = this.props.positionRedux;
@@ -241,7 +225,6 @@ class UserRedux extends Component {
             gender,
             position,
             role,
-            avatar,
         } = this.state;
 
         return (
@@ -353,7 +336,7 @@ class UserRedux extends Component {
                                     <FormattedMessage id="manage-user.gender" />
                                 </label>
                                 <select
-                                    class="form-control"
+                                    className="form-control"
                                     onChange={(event) => {
                                         this.onChangeInput(event, "gender");
                                     }}
@@ -381,7 +364,7 @@ class UserRedux extends Component {
                                     <FormattedMessage id="manage-user.position" />
                                 </label>
                                 <select
-                                    class="form-control"
+                                    className="form-control"
                                     onChange={(event) => {
                                         this.onChangeInput(event, "position");
                                     }}
@@ -409,7 +392,7 @@ class UserRedux extends Component {
                                     <FormattedMessage id="manage-user.role" />
                                 </label>
                                 <select
-                                    class="form-control"
+                                    className="form-control"
                                     onChange={(event) => {
                                         this.onChangeInput(event, "role");
                                     }}

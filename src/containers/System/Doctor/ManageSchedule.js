@@ -1,13 +1,12 @@
 /** @format */
 
-import React, { Component } from "react";
+import  { Component } from "react";
 import { connect } from "react-redux";
-import { Redirect, Route, Switch } from "react-router-dom";
 import "./ManageSchedule.scss";
 import { FormattedMessage } from "react-intl";
 import * as actions from "../../../store/actions";
 import Select from "react-select";
-import { CRUD_ACTIONS, LANGUAGES, dateFormat } from "../../../utils";
+import {  LANGUAGES } from "../../../utils";
 import DatePicker from "../../../components/Input/DatePicker";
 import moment from "moment";
 import { toast } from "react-toastify";

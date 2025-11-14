@@ -35,8 +35,9 @@ class HomeHeader extends Component {
                             <img
                                 className="header-logo"
                                 src={logo}
+                                alt="BookingCare logo"
                                 onClick={() => this.returnToHome()}
-                            ></img>
+                            />
                         </div>
                         <div className="center-content">
                             <div className="child-content">

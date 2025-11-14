@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import { FormattedMessage } from "react-intl";
+import  { Component } from "react";
 import { connect } from "react-redux";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import { idText } from "typescript";
 import { emitter } from "../../utils";
 class ModalUser extends Component {
     constructor(props) {

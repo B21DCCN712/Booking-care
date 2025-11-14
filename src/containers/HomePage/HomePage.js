@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { connect } from "react-redux";
 import HomeHeader from "./HomeHeader";
 import Specialty from "./Section/Specialty";
 import About from "./Section/About";
 import HomeFooter from "./HomeFooter";
-import HandBook from "./Section/HandBook";
+// import HandBook from "./Section/HandBook";
 import MedicalFacility from "./Section/MedicalFacility";
 import OutStandingDoctor from "./Section/OutStandingDoctor";
 import "./HomePage.scss";
@@ -18,17 +18,15 @@ class HomePage extends Component {
             speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
-            //   nextArrow: <SampleNextArrow />,
-            //   prevArrow: <SamplePrevArrow />,
         };
 
         return (
             <div>
                 <HomeHeader isShowBanner={true} />
+                <OutStandingDoctor settings={settings} />
                 <Specialty settings={settings} />
                 <MedicalFacility settings={settings} />
-                <OutStandingDoctor settings={settings} />
-                <HandBook settings={settings} />
+                {/* <HandBook settings={settings} /> */}
                 <About />
                 <HomeFooter />
             </div>

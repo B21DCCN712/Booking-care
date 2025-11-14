@@ -1,5 +1,8 @@
+/** @format */
+
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import * as actions from "../../store/actions";
 import Navigator from "../../components/Navigator";
 import { adminMenu, doctorMenu } from "./menuApp";
@@ -7,6 +10,7 @@ import "./Header.scss";
 import { LANGUAGES, USER_ROLE } from "../../utils";
 import { FormattedMessage } from "react-intl";
 import _ from "lodash";
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -14,6 +18,11 @@ class Header extends Component {
             menuApp: [],
         };
     }
+
+    handleChangeLanguage = (language) => {
+        this.props.changeLanguageAppRedux(language);
+    };
+
     componentDidMount() {
         let { userInfo } = this.props;
         let menu = [];
@@ -31,13 +40,8 @@ class Header extends Component {
         this.setState({
             menuApp: menu,
         });
-
-        console.log("check user infor", this.props.userInfo);
     }
 
-    handleChangeLanguage = (language) => {
-        this.props.changeLanguageAppRedux(language);
-    };
     render() {
         const { processLogout, language, userInfo } = this.props;
 

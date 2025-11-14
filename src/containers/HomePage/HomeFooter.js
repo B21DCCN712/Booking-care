@@ -1,39 +1,23 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { FormattedMessage } from "react-intl";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    ></div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    ></div>
-  );
-}
 
 class HomeFooter extends Component {
   render() {
     
-    return (
+        return (
       <div className="home-footer">
-        <p>&copy; 2025 Booking Care More information, please visit my youtube channel.
-            <a target="_blank" href=""> &#8594; Click here &#8592; </a> 
+        <p>
+          &copy; 2025 Booking Care More information, please visit my youtube channel.
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/"
+          >
+            {' '}
+            &#8594; Click here &#8592;
+          </a>
         </p>
       </div>
     );
